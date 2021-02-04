@@ -9,4 +9,3 @@ function mostrar()
 	alert("Usted se llama "+nombrePer+" "+apellPer+" y tiene "+edadPer+" años");
 
 }
-

@@ -5,11 +5,10 @@ mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
 	//mateo geminiani
+	var suma;
 	var num1, num2;
 	num1 = parseInt(txtIdNumeroUno.value);
 	num2 = parseInt(txtIdNumeroDos.value);
-	var suma;
 	suma = num1 + num2;
 	alert("la suma es: "+suma);
 }
-
