@@ -40,3 +40,4 @@ function PrecioFinal ()
 	sumaFinal = (prec1 + prec2 + prec3)*1.21;
 	alert("El precio final es de $"+sumaFinal);
 }
+//mateo geminiani

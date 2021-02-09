@@ -1,6 +1,21 @@
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
-	alert("ok");
-
-}//FIN DE LA FUNCIÓN
+	var nota;
+	nota = (Math.random()*10) + 1;
+	if(nota > 8)
+	 {
+	 	alert("EXCELENTE");
+	 }
+	 else
+	 {
+	 	if(nota > 3)
+	 	 {
+	 	 	alert("APROBÓ");
+	 	 }
+	 	 else
+	 	 {
+	 	 	alert("Vamos, que la proxima se puede");
+	 	 }
+	 }
+}
+//mateo geminiani
