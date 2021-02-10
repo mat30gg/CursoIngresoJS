@@ -10,5 +10,78 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	
+ 	var cantidad;
+ 	var marcaLampara;
+ 	var preciof;
+ 	cantidad = txtIdCantidad.value;
+ 	cantidad = parseInt(cantidad);
+ 	preciof = cantidad * 35;
+ 	marcaLampara = Marca.value;
+ 	if(cantidad > 5)
+ 	{
+ 		preciof = preciof * 0.5;
+ 	}
+ 	else
+ 	{
+ 		if(cantidad == 5)
+ 		{
+ 		 	if(marcaLampara == "ArgentinaLuz")
+ 		 	{
+ 		 	 	preciof = preciof * 0.6;
+ 		 	}
+ 		 	else
+ 		 	{
+ 		 	 	preciof = preciof * 0.7;
+ 		 	}
+ 		}
+ 		else
+ 		{
+ 			if(cantidad == 4)
+ 			{
+ 				if(marcaLampara == "ArgentinaLuz" || marcaLampara == "FelipeLamparas")
+ 				{
+ 				 	preciof = preciof * 0.75;
+ 				}
+ 				else
+ 				{
+ 				 	preciof = preciof * 0.80;
+ 				}
+ 			}
+ 			else
+ 			{
+ 			 	if(cantidad == 3)
+ 			 	{
+ 			 	 	if(marcaLampara == "ArgentinaLuz")
+ 			 	 	{
+ 			 	 	 	preciof = preciof * 0.85;
+ 			 	 	}
+ 			 	 	else
+ 			 	 	{
+ 			 	 	 	if(marcaLampara == "FelipeLamparas")
+ 			 	 	 	{
+ 			 	 	 	 	preciof = preciof * 0.90;
+ 			 	 	 	}
+ 			 	 	 	else
+ 			 	 	 	{
+ 			 	 	 	 	preciof = preciof * 0.95;
+ 			 	 	 	}
+ 			 	 	}
+ 			 	}
+ 			}
+ 		}
+ 	}
+
+ 	if(preciof > 120)
+ 	{
+ 		var ib;
+ 		ib = preciof * 0.1;
+ 		preciof = preciof + ib;
+ 		txtIdprecioDescuento.value = preciof;
+ 		alert("IIBB Usted pagó "+ib);
+ 	}
+ 	else
+ 	{
+ 	 	txtIdprecioDescuento.value = preciof;
+ 	}
 }
+//mateo geminiani

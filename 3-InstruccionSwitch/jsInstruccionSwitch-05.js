@@ -1,11 +1,14 @@
 function mostrar()
 {
-	//tomo la hora
-	var horaDelDia =txtIdHora.value;
-	alert(horaDelDia);
-	
-	
-
-
-
-}//FIN DE LA FUNCIÓN
+	var horaDelDia;
+	horaDelDia = txtIdHora.value;
+	switch(horaDelDia)
+	{
+		case "7":
+		case "8":
+		case "9":
+		case "10":
+		alert("Es de mañana.");
+	}
+}
+//mateo geminiani
