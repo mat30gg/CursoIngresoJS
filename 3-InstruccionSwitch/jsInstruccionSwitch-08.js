@@ -1,6 +1,16 @@
 function mostrar()
 {
-	var destinoIngresado =txtIdDestino.value;
-	alert(destinoIngresado);
-
-}//FIN DE LA FUNCIÓN
+	var destinoIngresado;
+	destinoIngresado =txtIdDestino.value;
+	switch(destinoIngresado)
+	{
+		case "Bariloche":
+		case "Ushuaia":
+			alert("FRIO");
+			break
+		case "Cataratas":
+		case "Mar del plata":
+			alert("CALOR");
+	}
+}
+//mateo geminiani
