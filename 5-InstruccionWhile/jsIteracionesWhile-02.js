@@ -7,7 +7,7 @@ function mostrar()
 	contador=10; 
 	while(contador > 0)
 	{
-		console.log(contador);
+		document.write(contador+"\n");
 		contador--;
 	}
 

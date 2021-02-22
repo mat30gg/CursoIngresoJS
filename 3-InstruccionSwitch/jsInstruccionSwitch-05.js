@@ -8,7 +8,7 @@ function mostrar()
 		case "8":
 		case "9":
 		case "10":
-		alert("Es de mañana.");
+			alert("Es de mañana.");
 	}
 }
 //mateo geminiani

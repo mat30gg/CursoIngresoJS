@@ -8,13 +8,13 @@ function mostrar()
 		case "Junio":
 		case "Septiembre":
 		case "Noviembre":
-		alert("El mes tiene 30 dias");
-		break
+			alert("El mes tiene 30 dias");
+			break
 		case "Febrero":
-		alert("El mes tiene 28 dias");
-		break
+			alert("El mes tiene 28 dias");
+			break
 		default:
-		alert("El mes tiene 31 dias");
+			alert("El mes tiene 31 dias");
 	}
 }
 //mateo geminiani

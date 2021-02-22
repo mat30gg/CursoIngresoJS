@@ -7,7 +7,8 @@ function mostrar()
 	f = 1;
 	while(f < 11)
 	{
-		console.log(f);
+		document.write(f+"\n");
 		f++;
 	}
-}//FIN DE LA FUNCIÓN
+}
+//mateo geminiani
