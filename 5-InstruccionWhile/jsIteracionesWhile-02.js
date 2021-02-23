@@ -10,5 +10,4 @@ function mostrar()
 		document.write(contador+"\n");
 		contador--;
 	}
-
-}//FIN DE LA FUNCIÓN
+}//mateo geminiani

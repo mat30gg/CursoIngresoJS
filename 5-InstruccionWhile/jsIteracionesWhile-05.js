@@ -4,10 +4,10 @@ Al presionar el botón pedir un sexo
 function mostrar()
 {
 	var sexoIngresado;
-	sexoIngresado = sexoIngresado.toLowerCase();
 	while(sexoIngresado != "f" && sexoIngresado != "m")
 	{
 		sexoIngresado = prompt("ingrese f ó m .");
+		sexoIngresado = sexoIngresado.toLowerCase();
 	}
 	txtIdSexo.value=sexoIngresado;
 }//mateo geminiani
