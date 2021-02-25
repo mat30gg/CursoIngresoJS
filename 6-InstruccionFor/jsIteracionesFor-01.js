@@ -1,4 +1,7 @@
 function mostrar()
 {
-	alert("ok");
+	for(f=0;f<11;f++)
+	{
+		document.write(f+"<br>");
+	}
 }

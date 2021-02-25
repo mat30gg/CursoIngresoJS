@@ -25,4 +25,5 @@ function mostrar()
 	txtIdSuma.value=acumulador;
 	txtIdPromedio.value=acumulador/contador;
 
-}//FIN DE LA FUNCIÓN
+}
+//mateo geminiani

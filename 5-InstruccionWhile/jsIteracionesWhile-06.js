@@ -18,3 +18,4 @@ function mostrar()
 	txtIdSuma.value=acumulador;
 	txtIdPromedio.value=acumulador/5;
 }
+//mateo geminiani

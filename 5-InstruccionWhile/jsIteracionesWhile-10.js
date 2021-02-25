@@ -9,7 +9,8 @@ hasta que el usuario quiera, mostrar:
 6-Cantidad de números pares.
 7-Promedio de positivos.
 8-Promedios de negativos.
-9-Diferencia entre positivos y negativos, (positvos-negativos). */
+9-Diferencia entre positivos y negativos, (positvos-negativos).
+10-De los negativos el mas grande y de los pares el mas chico */
 function mostrar()
 { 
 	var respuesta;
@@ -22,6 +23,10 @@ function mostrar()
 	var pares;
 	var promedioPosi;
 	var promedioNega;
+	var banderaNegativo;
+	var banderaPar;
+	var menorPar;
+	var mayorNega;
 
 	sumaNegativos=0;
 	sumaPositivos=0;
@@ -31,6 +36,9 @@ function mostrar()
 	pares=0;
 	promedioPosi=0;
 	promedioNega=0;
+	banderaPar = 1;
+	banderaNegativo = 1;
+
 
 	respuesta="si";
 
@@ -38,6 +46,11 @@ function mostrar()
 	{
 		numeroIngresado = prompt("ingrese numero");
 		numeroIngresado = parseInt(numeroIngresado);
+		while(isNaN(numeroIngresado))
+		{
+			numeroIngresado = prompt("ERRORingrese numero");
+			numeroIngresado = parseInt(numeroIngresado);
+		}
 		if(numeroIngresado == 0)
 		{
 			ceros++;
@@ -53,11 +66,21 @@ function mostrar()
 			{
 				sumaNegativos = sumaNegativos + numeroIngresado;
 				cantidadNega++;
+				if(banderaNegativo == 1 || numeroIngresado > mayorNega)
+				{
+					mayorNega = numeroIngresado;
+					banderaNegativo = 0;
+				}
 			}
 		}
 		if(numeroIngresado%2==0)
 		{
 			pares++;
+			if(banderaPar == 1 || numeroIngresado < menorPar)
+			{
+				menorPar = numeroIngresado;
+				banderaPar = 0;
+			}
 		}
 		respuesta=prompt("desea continuar?");
 	}
@@ -78,6 +101,14 @@ function mostrar()
 	document.write("<br>el promedio de negativos es: "+promedioNega);
 	document.write("<br>el promedio de positivos es: "+promedioPosi);
 	document.write("<br>la diferencia entre negativos y positivos es: "+(sumaPositivos-sumaNegativos));
+	if(isNaN(mayorNega)==false)
+	{
+		document.write("<br>el numero negativo mas grande es: "+mayorNega);
+	}
+	if(isNaN(menorPar)==false)
+	{
+		document.write("<br>el numero par mas chico es: "+menorPar);
+	}
 	//document.write("la suma de negativos es: "+sumaNegativos+"<br>la suma de positivos es: "+sumaPositivos+"<br>la cantidad de negativos es: "+cantidadNega+"<br>la cantidad de positivos es: "+cantidadPosi+"<br>la cantidad de ceros es: "+ceros+"<br>la cantidad de pares es: "+pares+"<br>el promedio de negativos es: "+promedioNega+"<br>el promedio de positivos es: "+promedioPosi+"<br>la diferencia entre negativos y positivos es: "+(sumaPositivos-sumaNegativos))
 }
 //mateo geminiani

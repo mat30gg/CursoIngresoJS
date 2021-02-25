@@ -1,7 +1,7 @@
 function mostrar()
 {
-	alert("ok");
-
-
-
-}//FIN DE LA FUNCIÓN
+	for(f=0;f!=9;)
+	{
+		f=prompt("Ingrese numero");
+	}
+}//mateo geminiani

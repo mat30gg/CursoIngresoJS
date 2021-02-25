@@ -1,7 +1,7 @@
 function mostrar()
 {
-	alert("ok");
-
-
-
-}//FIN DE LA FUNCIÓN
+	for(f=0;f!="BREAK";)
+	{
+		f = prompt("Ingrese BREAK");
+	}
+}//mateo geminiani
