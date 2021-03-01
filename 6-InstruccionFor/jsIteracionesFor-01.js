@@ -4,4 +4,4 @@ function mostrar()
 	{
 		document.write(f+"<br>");
 	}
-}
+}//mateo geminiani

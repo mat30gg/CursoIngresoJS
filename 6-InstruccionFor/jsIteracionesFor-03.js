@@ -6,6 +6,4 @@ function mostrar()
 	{
 		document.write("Hola UTN FRA"+"<br>");
 	}
-
-
-}//FIN DE LA FUNCIÓN
+}//mateo geminiani

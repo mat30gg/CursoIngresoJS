@@ -10,7 +10,6 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
 function ComenzarIngreso () 
 {
 	var h;
-	var g;
 	h = 0;
  	while(h < 18 || h > 90 || isNaN(h)==true)
  	{

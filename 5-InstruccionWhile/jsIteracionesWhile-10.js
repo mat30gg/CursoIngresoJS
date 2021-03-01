@@ -23,8 +23,6 @@ function mostrar()
 	var pares;
 	var promedioPosi;
 	var promedioNega;
-	var banderaNegativo;
-	var banderaPar;
 	var menorPar;
 	var mayorNega;
 
@@ -36,8 +34,6 @@ function mostrar()
 	pares=0;
 	promedioPosi=0;
 	promedioNega=0;
-	banderaPar = 1;
-	banderaNegativo = 1;
 
 
 	respuesta="si";
@@ -66,20 +62,18 @@ function mostrar()
 			{
 				sumaNegativos = sumaNegativos + numeroIngresado;
 				cantidadNega++;
-				if(banderaNegativo == 1 || numeroIngresado > mayorNega)
+				if(cantidadNega == 0 || numeroIngresado > mayorNega)
 				{
 					mayorNega = numeroIngresado;
-					banderaNegativo = 0;
 				}
 			}
 		}
 		if(numeroIngresado%2==0)
 		{
 			pares++;
-			if(banderaPar == 1 || numeroIngresado < menorPar)
+			if(pares == 0 || numeroIngresado < menorPar)
 			{
 				menorPar = numeroIngresado;
-				banderaPar = 0;
 			}
 		}
 		respuesta=prompt("desea continuar?");

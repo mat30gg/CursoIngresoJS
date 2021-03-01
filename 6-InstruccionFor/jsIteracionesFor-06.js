@@ -12,5 +12,4 @@ function mostrar()
 		}
 	}
 	document.write(c)
-
-}//FIN DE LA FUNCIÓN
+}//mateo geminiani
